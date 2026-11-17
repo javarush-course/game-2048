@@ -1,0 +1,12 @@
+# Игра 2048 с таблицей рекордов
+services:
+  web:
+    image: jrgames/2048-web:1.0
+    ports:
+      - "8080:80"
+  scores:
+    image: jrgames/2048-scores:1.0
+    ports:
+      - "3000:3000"
+  redis:
+    image: redis:8

@@ -1,0 +1,14 @@
+{
+  "name": "game-2048-scores",
+  "version": "1.0.0",
+  "description": "Сервер рекордов игры 2048: HTTP на порту 3000, рекорды хранит Redis",
+  "license": "MIT",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

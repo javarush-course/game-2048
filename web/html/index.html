@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Игра 2048 в браузере и общая таблица рекордов">
+  <title>2048 с таблицей рекордов</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="game">
+      <header class="top">
+        <h1>2048</h1>
+        <div class="box">Счёт <b id="score">0</b></div>
+        <button id="new" type="button">Новая игра</button>
+      </header>
+      <div id="board" class="board"></div>
+      <p id="msg" class="msg">Стрелки на клавиатуре или свайп сдвигают плитки. Одинаковые числа складываются — соберите 2048!</p>
+      <form id="save" class="save" hidden>
+        <p id="over">Игра окончена</p>
+        <input id="name" maxlength="20" placeholder="Ваше имя" autocomplete="nickname" required>
+        <button type="submit">Записать рекорд</button>
+      </form>
+    </section>
+    <aside class="records">
+      <h2>Таблица рекордов</h2>
+      <p class="small">Лучший результат каждого игрока, первые десять мест.</p>
+      <ol id="top"></ol>
+      <p id="status" class="status"></p>
+    </aside>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
